@@ -24,7 +24,9 @@ And in the render loop, add the following JSX code to instantiate the component.
 
 <DropToUpload
   onDrop={ this.handleDrop }
-/>
+>
+  Drop file here to upload
+</DropToUpload>
 ```
 
 When a file is dropped, `handleDrop` will be triggered. For example, the following code use `FormData` and [`fetch`](https://github.com/github/fetch) to upload all dropped files to the server at `/upload` via HTTP POST.
@@ -112,7 +114,7 @@ class Page extends Component {
         onDropArrayBuffer={ this.handleDropArrayBuffer }
         onDropDataURI={ this.handleDropDataURI }
       >
-        Drag and drop files here
+        Drop file here to upload
       </DropToUpload>
     );
   }
