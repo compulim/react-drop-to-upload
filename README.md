@@ -2,7 +2,7 @@
 
 [![NPM version](https://img.shields.io/npm/v/react-drop-to-upload.svg)](https://npmjs.org/package/react-drop-to-upload)
 
-A simple React component for "drop-to-upload" feature. File dropped will be returned as `ArrayBuffer` or Data URI.
+A simple React component for "drop-to-upload" feature. Files dropped will be returned as [`File`](https://w3c.github.io/FileAPI/), `ArrayBuffer`, and Data URI.
 
 It supports Internet Explorer 10 and up, and all major desktop browsers. You can also check up-to-date browser compatibilities at [Can I use ___?](http://caniuse.com/#feat=dragndrop).
 
