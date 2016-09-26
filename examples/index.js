@@ -5,6 +5,8 @@ import ReactDOM from 'react-dom';
 
 import DropToUpload from '../src/index';
 
+import SparkMD5 from 'spark-md5';
+
 class Page extends Component {
   constructor(props) {
     super(props);
@@ -44,10 +46,11 @@ class Page extends Component {
     this.setState({
       active: 0,
       drops: this.state.drops.slice().concat(
-        files.map(file => ({
+        files.map((file, index) => ({
           type: 'ArrayBuffer',
           name: file.name,
-          size: file.size
+          size: file.size,
+          md5: SparkMD5.ArrayBuffer.hash(arrayBuffers[index])
         }))
       )
     });
@@ -98,7 +101,15 @@ class Page extends Component {
         <ul>
           {
             this.state.drops.map((drop, index) =>
-              <li key={ index }>{ drop.type }: { drop.name } ({ drop.size } bytes)</li>
+              <li key={ index }>
+                <span>{ drop.type }: { drop.name } ({ drop.size } bytes)</span>
+                {
+                  drop.md5 &&
+                    <ul>
+                      <li>MD5 is { drop.md5 }</li>
+                    </ul>
+                }
+              </li>
             )
           }
         </ul>
