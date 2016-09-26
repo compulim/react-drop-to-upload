@@ -1,6 +1,6 @@
 # HTML5 drop-to-upload component for React
 
-<span class="badge-npmversion"><a href="https://npmjs.org/package/badges" title="View this project on NPM"><img src="https://img.shields.io/npm/v/react-drop-to-upload.svg" alt="NPM version" /></a></span>
+[![NPM version](https://img.shields.io/npm/v/react-drop-to-upload.svg)](https://npmjs.org/package/react-drop-to-upload)
 
 A simple React component for "drop-to-upload" feature. File dropped will be returned as `ArrayBuffer` or Data URI.
 
