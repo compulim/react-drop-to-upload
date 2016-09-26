@@ -6,6 +6,18 @@ A simple React component for "drop-to-upload" feature. File dropped will be retu
 
 It supports Internet Explorer 10 and up, and all major desktop browsers. You can also check up-to-date browser compatibilities at [Can I use ___?](http://caniuse.com/#feat=dragndrop).
 
+## Why another file drop component?
+
+Most file drop component are comprehensive and restrictive. They do all the heavylifting including file drop and HTTP POST upload. They all have good intentions. But to ensure everything works as expected, developers may need to follow their way to work, include adding specific server code.
+
+We embrace microservices and focus on making a great small simple-to-learn UI component. We believe React component should not cross the visualization border and touch any transport code.
+
+Thus, we intentionally leave the HTTP POST upload part away from the component, for a few good reasons.
+
+1. Select your transport. `XMLHttpRequest` or [`window.fetch`](https://github.github.io/fetch/), add HTTP headers, use multipart, and flexible CORS handling
+2. Be creative. Dropping file means more than just upload. You could generate thumbnails, [calculate MD5](https://www.npmjs.com/package/spark-md5), [open PDF](http://mozilla.github.io/pdf.js/), etc
+3. Be flexible. Use [JSZip](https://stuk.github.io/jszip/) to compress plain text files before upload
+
 ## How to use
 
 Install our package thru NPM.
