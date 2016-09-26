@@ -8,9 +8,9 @@ It supports Internet Explorer 10 and up, and all major desktop browsers. You can
 
 ## Why another file drop component?
 
-Most file drop component are comprehensive and restrictive. They do all the heavylifting including file drop and HTTP POST upload. They all have good intentions. But to ensure everything works as expected, developers may need to follow their way to work, include adding specific server code.
+Most file drop components are comprehensive and restrictive. They do all the heavylifting including file drop and HTTP POST upload. They all have good intentions. But to ensure everything works as expected, developers may need to follow their way to work, include adding specific server code.
 
-We embrace microservices and focus on making a great small simple-to-learn UI component. We believe React component should not cross the visualization border and touch any transport code.
+We embrace microservices and focus on making a great, small, and simple-to-learn UI component. We believe React component should not cross the visualization border and touch any transport code.
 
 Thus, we intentionally leave the HTTP POST upload part away from the component, for a few good reasons.
 
