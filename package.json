@@ -2,10 +2,32 @@
   "name": "react-drop-to-upload",
   "description": "React component for drop-to-upload",
   "version": "0.0.1",
-  "main": "index.js",
+  "main": "dist/react-drop-to-upload.es5.js",
+  "jsnext:main": "dist/react-drop-to-upload.es6.js",
+  "author": {
+    "name": "William Wong",
+    "email": "compulim@hotmail.com",
+    "url": "https://github.com/compulim"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/compulim/react-drop-to-upload.git"
+  },
+  "bugs": {
+    "url": "https://github.com/compulim/react-drop-to-upload/issues"
+  },
+  "keywords": [
+    "drag",
+    "drop",
+    "file",
+    "filedrop",
+    "react",
+    "upload"
+  ],
   "license": "MIT",
   "scripts": {
     "build": "gulp build",
+    "prepublish": "gulp build",
     "selfhost": "node devServer"
   },
   "peerDependencies": {
@@ -14,9 +36,12 @@
   "devDependencies": {
     "babel-cli": "^6.14.0",
     "babel-loader": "^6.2.5",
+    "babel-plugin-transform-es2015-modules-systemjs": "^6.14.0",
+    "babel-plugin-transform-es2015-modules-umd": "^6.12.0",
     "babel-preset-es2015": "^6.14.0",
     "babel-preset-react": "^6.11.1",
     "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
     "qs": "^6.2.1",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
@@ -24,6 +49,5 @@
     "webpack": "^1.13.2",
     "webpack-dev-server": "^1.16.1",
     "webpack-stream": "^3.2.0"
-  },
-  "dependencies": {}
+  }
 }

@@ -9,7 +9,7 @@ const PORT = 8080;
 
 const
   BABEL_OPTIONS = {
-    presets: ['react', 'es2015'],
+    presets: ['es2015', 'react'],
     plugins: ['react-hot-loader/babel']
   };
 

@@ -117,7 +117,7 @@ class Page extends Component {
 
 ## Changelog
 
-* 0.0.1 (2016-09-27)
+* [0.0.1](https://github.com/compulim/react-drop-to-upload/releases/tag/0.0.1) (2016-09-27)
   * Initial commit
 
 ## Contributions

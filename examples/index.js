@@ -3,7 +3,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
-import DropToUpload from '../index';
+import DropToUpload from '../src/index';
 
 class Page extends Component {
   constructor(props) {
