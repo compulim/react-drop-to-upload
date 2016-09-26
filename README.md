@@ -46,6 +46,8 @@ handleDrop(files) {
 
 Additionally, if `onDropArrayBuffer` or `onDropDataURI` props are specified, the file will be read as `ArrayBuffer` and/or data URIs, and then passed to the corresponding handlers.
 
+In addition to ES5 build, we also provide ES6, UMD, and SystemJS builds under [`dist`](https://github.com/compulim/react-drop-to-upload/tree/master/dist) folder. We support ES6 build thru `jsnext:main` in `package.json`.
+
 ## Supported props
 
 Followings are list of props supported by the component.
