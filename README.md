@@ -1,5 +1,7 @@
 # HTML5 drop-to-upload component for React
 
+<span class="badge-npmversion"><a href="https://npmjs.org/package/badges" title="View this project on NPM"><img src="https://img.shields.io/npm/v/react-drop-to-upload.svg" alt="NPM version" /></a></span>
+
 A simple React component for "drop-to-upload" feature. File dropped will be returned as `ArrayBuffer` or Data URI.
 
 It supports Internet Explorer 10 and up, and all major desktop browsers. You can also check up-to-date browser compatibilities at [Can I use ___?](http://caniuse.com/#feat=dragndrop).
@@ -10,13 +12,13 @@ Install our package thru NPM.
 
 `npm install react-drop-to-upload`
 
-Add the following code to your React component.
+Add the following code to your React component to import the `react-drop-to-upload` component.
 
 ```js
 import DropToUpload from 'react-drop-to-upload';
 ```
 
-And in the render loop, add the following JSX.
+And in the render loop, add the following JSX code to instantiate the component.
 
 ```jsx
 
@@ -25,7 +27,7 @@ And in the render loop, add the following JSX.
 />
 ```
 
-When a file is dropped, `handleDrop` will be triggered. For example, the following code use `FormData` and [`fetch`](https://github.com/github/fetch) to POST all dropped files to the server at `/upload`.
+When a file is dropped, `handleDrop` will be triggered. For example, the following code use `FormData` and [`fetch`](https://github.com/github/fetch) to upload all dropped files to the server at `/upload` via HTTP POST.
 
 ```js
 handleDrop(files) {
@@ -42,15 +44,17 @@ handleDrop(files) {
 }
 ```
 
-Additionally, if you provide `onDropArrayBuffer` or `onDropDataURI` props, the file will be read as `ArrayBuffer` and/or data URIs, and then passed to the corresponding handlers.
+Additionally, if `onDropArrayBuffer` or `onDropDataURI` props are specified, the file will be read as `ArrayBuffer` and/or data URIs, and then passed to the corresponding handlers.
 
 ## Supported props
+
+Followings are list of props supported by the component.
 
 | Name                                       | Supported types                    | Default | Description                                                                                                  |
 | ------------------------------------------ | ---------------------------------- | ------- | ------------------------------------------------------------------------------------------------------------ |
 | `className`                                | String                             |         | Class name to apply                                                                                          |
 | `dropEffect`                               | `copy`, `link`, `move`, or `none`  |         | Drop effect to show when `onDragOver` is emitted                                                             |
-| `element`                                  | String or React element            | `div`   | Component type of the dropping element                                                                       |
+| `element`                                  | String or React element            | `"div"`   | Component type of the dropping element                                                                       |
 | `id`                                       | String                             |         | HTML ID of the element                                                                                       |
 | `onDrop(File[])`                           | Function                           |         | Handler to call when a file is dropped                                                                       |
 | `onDropArrayBuffer(ArrayBuffer[], File[])` | Function                           |         | Handler to call when a file is dropped and read as `ArrayBuffer`                                             |
