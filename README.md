@@ -111,7 +111,9 @@ class Page extends Component {
         onDrop={ this.handleDrop }
         onDropArrayBuffer={ this.handleDropArrayBuffer }
         onDropDataURI={ this.handleDropDataURI }
-      />
+      >
+        Drag and drop files here
+      </DropToUpload>
     );
   }
 }
