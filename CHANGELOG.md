@@ -1,3 +1,7 @@
+# 1.0.1 (2017-12-08)
+
+* Move `rimraf` dependencies to dev dependencies
+
 # 1.0.0 (2017-12-08)
 
 * Move to React 16
