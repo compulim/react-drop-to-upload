@@ -142,7 +142,7 @@ class Page extends Component {
 
 ## Changelog
 
-You can find the changelog [here](tree/master/CHANGELOG.md).
+You can find the changelog [here](CHANGELOG.md).
 
 ## Contributions
 
