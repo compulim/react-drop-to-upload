@@ -138,10 +138,11 @@ class Page extends Component {
 }
 ```
 
+> You can find our testbed repository [here](https://github.com/compulim/react-drop-to-upload-testbed).
+
 ## Changelog
 
-* [0.0.1](https://github.com/compulim/react-drop-to-upload/releases/tag/0.0.1) (2016-09-27)
-  * Initial commit
+You can find the changelog [here](tree/master/CHANGELOG.md).
 
 ## Contributions
 
