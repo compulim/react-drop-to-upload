@@ -23,7 +23,7 @@ function buildLibES5() {
       presets: ['es2015', 'react']
     }))
     .pipe(rename({ basename: 'react-drop-to-upload.es5' }))
-    .pipe(gulp.dest('dist'));
+    .pipe(gulp.dest('lib'));
 }
 
 function buildLibUMD() {
@@ -34,7 +34,7 @@ function buildLibUMD() {
       plugins: ['transform-es2015-modules-umd']
     }))
     .pipe(rename({ basename: 'react-drop-to-upload.umd' }))
-    .pipe(gulp.dest('dist'));
+    .pipe(gulp.dest('lib'));
 }
 
 function buildLibSystemJS() {
@@ -45,7 +45,7 @@ function buildLibSystemJS() {
       plugins: ['transform-es2015-modules-systemjs']
     }))
     .pipe(rename({ basename: 'react-drop-to-upload.register' }))
-    .pipe(gulp.dest('dist'));
+    .pipe(gulp.dest('lib'));
 }
 
 function buildLibES6() {
@@ -55,5 +55,5 @@ function buildLibES6() {
       presets: ['react']
     }))
     .pipe(rename({ basename: 'react-drop-to-upload.es6' }))
-    .pipe(gulp.dest('dist'));
+    .pipe(gulp.dest('lib'));
 }

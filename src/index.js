@@ -1,10 +1,11 @@
 'use strict';
 
-import React, { Component, PropTypes } from 'react';
+import PropTypes from 'prop-types';
+import React     from 'react';
 
 const NOOP = () => 0;
 
-class DropToUpload extends Component {
+class DropToUpload extends React.Component {
   constructor(props) {
     super(props);
 

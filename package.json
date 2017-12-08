@@ -2,8 +2,9 @@
   "name": "react-drop-to-upload",
   "description": "React component for drop-to-upload",
   "version": "0.0.1",
-  "main": "dist/react-drop-to-upload.es5.js",
-  "jsnext:main": "dist/react-drop-to-upload.es6.js",
+  "main": "lib/react-drop-to-upload.es5.js",
+  "jsnext:main": "lib/react-drop-to-upload.es6.js",
+  "module": "lib/react-drop-to-upload.es6.js",
   "author": {
     "name": "William Wong",
     "email": "compulim@hotmail.com",
@@ -24,31 +25,37 @@
     "react",
     "upload"
   ],
+  "files": [
+    "lib/*"
+  ],
   "license": "MIT",
   "scripts": {
     "build": "gulp build",
-    "prepublish": "gulp build",
+    "prepare": "rimraf lib && npm run build",
     "selfhost": "node devServer"
   },
   "peerDependencies": {
-    "react": "^15.3.2"
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
   },
   "devDependencies": {
-    "babel-cli": "^6.14.0",
-    "babel-loader": "^6.2.5",
-    "babel-plugin-transform-es2015-modules-systemjs": "^6.14.0",
-    "babel-plugin-transform-es2015-modules-umd": "^6.12.0",
-    "babel-preset-es2015": "^6.14.0",
-    "babel-preset-react": "^6.11.1",
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-es2015-modules-systemjs": "^6.24.1",
+    "babel-plugin-transform-es2015-modules-umd": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
     "gulp": "^3.9.1",
-    "gulp-babel": "^6.1.2",
-    "qs": "^6.2.1",
-    "react": "^15.3.2",
-    "react-dom": "^15.3.2",
-    "react-hot-loader": "^3.0.0-beta.5",
-    "spark-md5": "^2.0.2",
-    "webpack": "^1.13.2",
-    "webpack-dev-server": "^1.16.1",
-    "webpack-stream": "^3.2.0"
+    "gulp-babel": "^7.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-util": "^3.0.8",
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "webpack": "^3.10.0"
+  },
+  "dependencies": {
+    "rimraf": "^2.6.2"
   }
 }
