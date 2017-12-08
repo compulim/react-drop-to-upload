@@ -146,10 +146,6 @@ You can find the changelog [here](CHANGELOG.md).
 
 ## Contributions
 
-Fork our [repository](https://github.com/compulim/react-drop-to-upload) and clone it to your box. Then type `npm install`, followed by `npm run selfhost`. A Webpack development server will then up at [http://localhost:8080/](http://localhost:8080/) for testing and debugging.
-
-We recommend [Visual Studio Code](https://code.visualstudio.com/) with [Chrome debugger extension](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome) for best debugging experience. Open the workspace with Visual Studio Code and press F5 to start debugging in Chrome.
-
 Like us? Please star our [NPM package](https://npmjs.com/react-drop-to-upload) and [GitHub repository](https://github.com/compulim/react-drop-to-upload).
 
 Don't feel quite right? Please [file a wish or an issue](https://github.com/compulim/react-drop-to-upload/issues) to us.
