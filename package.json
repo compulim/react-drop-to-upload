@@ -1,7 +1,7 @@
 {
   "name": "react-drop-to-upload",
   "description": "React component for drop-to-upload",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "lib/react-drop-to-upload.es5.js",
   "author": {
     "name": "William Wong",
