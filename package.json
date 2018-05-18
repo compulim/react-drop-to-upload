@@ -3,8 +3,6 @@
   "description": "React component for drop-to-upload",
   "version": "1.0.1",
   "main": "lib/react-drop-to-upload.es5.js",
-  "jsnext:main": "lib/react-drop-to-upload.es6.js",
-  "module": "lib/react-drop-to-upload.es6.js",
   "author": {
     "name": "William Wong",
     "email": "compulim@hotmail.com",
