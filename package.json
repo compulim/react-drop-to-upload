@@ -1,7 +1,7 @@
 {
   "name": "react-drop-to-upload",
   "description": "React component for drop-to-upload",
-  "version": "1.0.2",
+  "version": "1.0.3-0",
   "main": "lib/react-drop-to-upload.es5.js",
   "author": {
     "name": "William Wong",
@@ -30,7 +30,8 @@
   "scripts": {
     "build": "gulp build",
     "prepare": "rimraf lib && npm run build",
-    "selfhost": "node devServer"
+    "selfhost": "node devServer",
+    "test": "echo \"TODO: Add more tests\""
   },
   "peerDependencies": {
     "prop-types": "^15.6.0",
